@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Datenschutzerklärung – MauseFit</title>
+<title>Datenschutzerklärung · MauseFit</title>
 <style>
   :root { color-scheme: light dark; }
   body {
@@ -28,12 +28,17 @@
 <body>
 
 <h1>Datenschutzerklärung</h1>
-<p class="meta">MauseFit für iOS · Stand: 21. August 2026</p>
+<p class="meta">MauseFit für iPhone und iPad · Stand: 28. September 2026</p>
 
 <div class="box">
-  <strong>Kurz gefasst:</strong> MauseFit verarbeitet alle Daten ausschließlich
-  auf deinem Gerät. Es gibt keinen Server, kein Benutzerkonto, keine Analyse-
-  oder Tracking-Dienste. Deine Gesundheitsdaten verlassen dein iPhone nicht.
+  <strong>Kurz gefasst:</strong> MauseFit verarbeitet deine Gesundheitsdaten
+  ausschließlich auf deinem Gerät. Es gibt keinen eigenen Server, kein
+  Benutzerkonto, keine Analyse- oder Tracking-Dienste. Die App schickt deine
+  Gesundheitsdaten nirgendwohin. Es gibt zwei Ausnahmen, und keine davon
+  betrifft Gesundheitsdaten: Bei der Suche nach Lebensmitteln geht ein
+  Suchbegriff oder ein Barcode an eine Lebensmitteldatenbank. Und ausgewählte
+  Einstellungen gleicht die App über deine eigene iCloud zwischen deinen
+  Geräten ab, sofern du bei iCloud angemeldet bist. Darauf hast nur du Zugriff.
 </div>
 
 <h2>Verantwortlicher</h2>
@@ -45,32 +50,134 @@
 <h2>Welche Daten die App liest</h2>
 <p>
   MauseFit greift mit deiner ausdrücklichen Erlaubnis lesend auf Apple Health
-  (HealthKit) zu. Abgefragt werden ausschließlich:
+  (HealthKit) zu. Du entscheidest im Systemdialog für jede Kategorie einzeln,
+  ob die App sie lesen darf. Abgefragt werden ausschließlich:
 </p>
 <ul>
-  <li>Körpergewicht</li>
-  <li>Körperfettanteil</li>
-  <li>Magermasse (fettfreie Masse)</li>
-  <li>Ruhepuls</li>
-  <li>Trainingseinheiten (Art, Zeitraum, verbrauchte Energie)</li>
+  <li>Körpergewicht, Körperfettanteil und Magermasse (fettfreie Masse)</li>
+  <li>Ruhepuls und Puls (der Puls nur während eines laufenden Trainings, für
+      die Anzeige der Trainingszonen)</li>
+  <li>Schritte, zurückgelegte Strecke, gestiegene Etagen und aktiv verbrauchte
+      Energie (für die Tagesaktivität)</li>
+  <li>Trainingseinheiten (Art, Zeitraum, verbrauchte Energie, Strecke)</li>
+  <li>Schlafanalyse (Bettzeit und Schlafphasen der letzten Nächte)</li>
+  <li>Geburtsdatum (allein zur Schätzung deines Maximalpulses; du kannst den
+      Wert in den Einstellungen auch selbst eintragen)</li>
 </ul>
 <p>
-  Diese Daten werden nur gelesen, um sie dir in der App darzustellen. MauseFit
-  schreibt keine Daten nach Apple Health zurück.
+  Zusätzlich liest die App, wenn du die Ernährungserfassung nutzt: deine
+  Körpergröße und dein biologisches Geschlecht (allein zur Schätzung deines
+  Grundumsatzes) sowie die Nährwerte Kalorien, Eiweiß, Kohlenhydrate und Fett,
+  damit Mahlzeiten aus anderen Apps in deiner Tagesbilanz auftauchen.
+</p>
+<p>
+  Welche Kategorien die App liest, zeigt sie dir auch selbst im Profil unter
+  „Daten".
+</p>
+
+<h2>Welche Daten die App schreibt</h2>
+<p>
+  MauseFit schreibt nach Apple Health ausschließlich, was du selbst erfasst:
+</p>
+<ul>
+  <li>Mahlzeiten als Nährwerte (Kalorien, Eiweiß, Kohlenhydrate und Fett),
+      zusammen mit der Bezeichnung, die du dem Eintrag gegeben hast</li>
+  <li>Trainings, die du in der App aufzeichnest oder nachträgst, mit Art,
+      Zeitraum und, sofern vorhanden, verbrauchter Energie und Strecke</li>
+</ul>
+<p>
+  Auch dafür fragt Apple dich vorher um Erlaubnis, und du kannst sie jederzeit
+  entziehen. Ohne diese Erlaubnis funktioniert die Erfassung weiterhin, die
+  Werte bleiben dann nur in MauseFit. Alle übrigen Kategorien werden
+  ausschließlich gelesen.
+</p>
+
+<h2>Trainings aufzeichnen</h2>
+<p>
+  Wenn du in der App ein Training startest, zeichnet iOS es als Training in
+  Apple Health auf. Energie und Strecke ermittelt dabei das System selbst, den
+  Puls liefern verbundene Geräte wie AirPods oder ein Brustgurt direkt an
+  Apple Health. MauseFit schätzt keine eigenen Werte. Damit die Aufzeichnung
+  auch bei gesperrtem Bildschirm weiterläuft, fragt iOS beim ersten Mal, ob
+  die App die Trainingsdaten dann lesen darf. Beendest du das Training, wird
+  es in Apple Health gespeichert. Sehr kurze oder offensichtlich vergessene
+  Aufzeichnungen verwirft die App, statt sie zu speichern.
+</p>
+
+<h2>Abgleich über iCloud</h2>
+<p>
+  Nutzt du MauseFit auf mehreren Geräten und bist bei iCloud angemeldet,
+  gleicht die App ausgewählte Einstellungen zwischen ihnen ab, derzeit das
+  gewählte Farbschema. Diese Einstellungen liegen dazu in der privaten
+  CloudKit-Datenbank deines eigenen iCloud-Kontos. Sie werden von Apple
+  gespeichert und übertragen. Wir haben darauf keinen Zugriff und sehen diese
+  Daten nicht. Gesundheitsdaten gehören nicht dazu: Deren Abgleich zwischen
+  deinen Geräten übernimmt Apple Health selbst, wenn du das in den Einstellungen
+  deines iPhones eingeschaltet hast.
+</p>
+<p>
+  Ohne iCloud-Anmeldung bleibt alles auf dem Gerät. Du kannst den Abgleich
+  jederzeit abschalten: <em>Einstellungen → [dein Name] → iCloud → Apps, die
+  iCloud verwenden → MauseFit</em>. Rechtsgrundlage ist die Bereitstellung der
+  Funktion, die du nutzt (Art. 6 Abs. 1 lit. b DSGVO).
+</p>
+
+<h2>Lebensmitteldatenbanken</h2>
+<p>
+  Grundnahrungsmittel wie Obst, Gemüse oder Milch sucht MauseFit in einer
+  mitgelieferten Tabelle, dem Bundeslebensmittelschlüssel des Max
+  Rubner-Instituts. Diese Suche läuft auf dem Gerät, dabei verlässt nichts
+  dein iPhone oder iPad.
+</p>
+<p>
+  Für verpackte Produkte fragt MauseFit eine externe Datenbank ab. Das
+  geschieht nur, wenn du selbst eine Suche startest oder einen Barcode
+  scannst.
+</p>
+<ul>
+  <li>
+    <strong>Open Food Facts</strong> (Open Food Facts, Frankreich). Übermittelt
+    wird dein Suchbegriff beziehungsweise die gescannte Barcode-Nummer, dazu
+    technisch unvermeidbar deine IP-Adresse und eine Kennung der App
+    („MauseFit" mit Versionsnummer). Rechtsgrundlage ist dein
+    Nutzungsverhalten als Anfrage, also Art. 6 Abs. 1 lit. b DSGVO. Die
+    Produktdaten stehen unter der Open Database License (ODbL).
+  </li>
+</ul>
+<p>
+  <strong>An Open Food Facts werden keine Gesundheitsdaten übermittelt.</strong>
+  Die Datenbank erfährt nicht, was du isst, ob du einen Treffer übernimmst, wie
+  viel davon oder wie deine Werte aussehen. Sie sieht nur die Anfrage selbst. Es
+  wird kein Konto angelegt und keine dauerhafte Kennung übertragen.
+</p>
+
+<h2>Kamera</h2>
+<p>
+  Für das Scannen von Barcodes bittet die App um Zugriff auf die Kamera. Das
+  Bild wird ausschließlich auf dem Gerät ausgewertet, um die Ziffern des
+  Barcodes zu lesen. Es werden keine Fotos gespeichert und keine Bilder
+  übertragen. Ohne diese Erlaubnis kannst du Lebensmittel weiterhin über die
+  Textsuche oder von Hand erfassen.
 </p>
 
 <h2>Wo die Daten bleiben</h2>
 <p>
   Die Gesundheitsdaten werden zur Anzeige im Arbeitsspeicher verarbeitet und
-  nicht von der App gespeichert – sie bleiben in Apple Health. Zusätzlich legt
-  MauseFit deine eigenen Einstellungen lokal im geschützten Speicherbereich der
-  App ab (gewähltes Farbschema, Timer-Einstellungen, Trainingsfortschritt des
-  Tages). Dieser Bereich ist nur für MauseFit zugänglich.
+  nicht von der App gespeichert, sie bleiben in Apple Health. Zusätzlich legt
+  MauseFit deine eigenen Daten lokal im geschützten Speicherbereich der App ab:
+  Einstellungen (etwa Farbschema und Timer), deine Trainingspläne und
+  erfassten Sätze, deine Ernährungsziele, dein Ernährungsprotokoll, deine
+  gemerkten Lebensmittel und Rezepte. Dieser Bereich ist nur für MauseFit
+  zugänglich. Was davon über iCloud abgeglichen wird, steht im Abschnitt
+  „Abgleich über iCloud".
 </p>
 <p>
-  <strong>Es findet keine Übermittlung an den Verantwortlichen oder an Dritte
-  statt.</strong> Die App enthält keine Analyse-, Werbe- oder Tracking-Dienste
-  und baut keine Netzwerkverbindung zu eigenen Servern auf.
+  <strong>Es findet keine Übermittlung an den Verantwortlichen statt.</strong>
+  Die App enthält keine Analyse-, Werbe- oder Tracking-Dienste und baut keine
+  Netzwerkverbindung zu Servern des Verantwortlichen auf. Eine Übermittlung an
+  Dritte findet ausschließlich in dem oben beschriebenen Umfang statt, nämlich
+  als Suchanfrage an eine Lebensmitteldatenbank und als Abgleich über deine
+  eigene iCloud.
 </p>
 
 <h2>Rechtsgrundlage</h2>
@@ -84,17 +191,20 @@
 <h2>Löschung</h2>
 <p>
   Da keine Daten an uns übermittelt werden, liegen bei uns keine Daten vor, die
-  gelöscht werden könnten. Die lokal gespeicherten Einstellungen werden
-  vollständig entfernt, wenn du die App von deinem Gerät löschst. Deine
-  Gesundheitsdaten verwaltest du in der Health-App von Apple.
+  gelöscht werden könnten. Die lokal gespeicherten Daten werden vollständig
+  entfernt, wenn du die App von deinem Gerät löschst. Die über iCloud
+  abgeglichenen Einstellungen löschst du unter <em>Einstellungen → [dein Name]
+  → iCloud → Speicher verwalten → MauseFit</em>. Deine Gesundheitsdaten
+  verwaltest du in der Health-App von Apple.
 </p>
 
 <h2>Apple als eigener Verantwortlicher</h2>
 <p>
-  Beim Herunterladen und Aktualisieren der App – auch über TestFlight –
+  Beim Herunterladen und Aktualisieren der App, auch über TestFlight,
   verarbeitet Apple Daten in eigener Verantwortung (etwa Apple-ID,
   Installationsdaten und, sofern du dem zugestimmt hast, Absturzberichte).
-  Darauf haben wir keinen Einfluss. Es gilt die
+  Dasselbe gilt für iCloud und Apple Health. Darauf haben wir keinen Einfluss.
+  Es gilt die
   <a href="https://www.apple.com/legal/privacy/de-ww/">Datenschutzrichtlinie von Apple</a>.
 </p>
 
@@ -109,10 +219,9 @@
 
 <h2>Änderungen</h2>
 <p>
-  Sollte MauseFit künftig Funktionen erhalten, die eine Datenübermittlung
-  erfordern – etwa eine Synchronisation zwischen Geräten oder ein
-  Benutzerkonto –, wird diese Erklärung vorher entsprechend angepasst und die
-  Verarbeitung erfolgt erst nach deiner Einwilligung.
+  Sollte MauseFit künftig Funktionen erhalten, die eine weitere
+  Datenübermittlung erfordern, etwa ein Benutzerkonto oder den Abgleich
+  weiterer Daten, wird diese Erklärung vorher entsprechend angepasst.
 </p>
 
 </body>
